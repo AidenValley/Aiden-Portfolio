@@ -45,7 +45,9 @@ class Header extends Component {
                 <Typical steps={[name]} wrapper="p" />
               </h1>
               <div className="title-container">
-                <HeaderTitleTypeAnimation />
+                <HeaderTitleTypeAnimation/>
+                <h1>Aiden (Ha Yoon) Jang</h1>
+                <p className="title-styles styles_typicalWrapper__1_Uvh">Software Engineer</p>
               </div>
               <Switch
                 checked={this.state.checked}
@@ -56,7 +58,7 @@ class Header extends Component {
                 width={90}
                 height={40}
                 uncheckedIcon={
-                  <span
+                  <span 
                     className="iconify"
                     data-icon="twemoji:owl"
                     data-inline="false"
@@ -71,7 +73,7 @@ class Header extends Component {
                   ></span>
                 }
                 checkedIcon={
-                  <span
+                  <span 
                     className="iconify"
                     data-icon="noto-v1:sun-with-face"
                     data-inline="false"
@@ -83,6 +85,7 @@ class Header extends Component {
                       marginLeft: "10px",
                       color: "#353239",
                     }}
+                    
                   ></span>
                 }
                 id="icon-switch"

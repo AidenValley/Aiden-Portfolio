@@ -3,7 +3,7 @@ import Typical from "react-typical";
 import Switch from "react-switch";
 
 class Header extends Component {
-  titles = [];
+  titles = ['Software Engineer', ' ', 'Front-End Developer', ' ', 'Full-Stack Developer'];
 
   constructor() {
     super();
@@ -31,7 +31,7 @@ class Header extends Component {
     }
 
     const HeaderTitleTypeAnimation = React.memo( () => {
-      return <Typical className="title-styles" steps={this.titles} loop={50} />
+      return <Typical className="title-styles" steps={this.titles} loop={Infinity} />
     }, (props, prevProp) => true);
 
     return (
@@ -39,22 +39,21 @@ class Header extends Component {
         <div className="row aligner" style={{height: '100%'}}>
           <div className="col-md-12">
             <div>
-              <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
+              <span className="iconify header-icon" data-icon="fa6-solid:desktop" data-inline="false"></span>
               <br/>
               <h1 className="mb-0">
                 <Typical steps={[name]} wrapper="p" />
+                Aiden (Ha Yoon) Jang
               </h1>
               <div className="title-container">
                 <HeaderTitleTypeAnimation/>
-                <h1>Aiden (Ha Yoon) Jang</h1>
-                <p className="title-styles styles_typicalWrapper__1_Uvh">Software Engineer</p>
               </div>
-              <Switch
+              <Switch 
                 checked={this.state.checked}
                 onChange={this.onThemeSwitchChange}
                 offColor="#baaa80"
                 onColor="#353535"
-                className="react-switch mx-auto"
+                className="react-switch mx-auto mt-2"
                 width={90}
                 height={40}
                 uncheckedIcon={

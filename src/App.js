@@ -14,16 +14,24 @@ class App extends Component {
     super();
     this.state = {
       foo: "bar",
-      resumeData: {
-        
-      },
+      resumeData: {},
       sharedData: {},
     };
   }
 
-  loadResumeFromPath(path) {
+  // applyPickedLanguage() {
+  //   var resumePath = `res_primaryLanguage.json`
+  //   this.loadResumeFromPath(resumePath);
+  // }
+
+  // componentDidMount() {
+  //   this.loadSharedData();
+  // }
+
+
+  loadResumeData(path) {
     $.ajax({
-      url: path,
+      url: './res_primaryLanguage.json',
       dataType: "json",
       cache: false,
       success: function (data) {
@@ -37,12 +45,12 @@ class App extends Component {
 
   loadSharedData() {
     $.ajax({
-      url: `portfolio_shared_data.json`,
+      url: `./portfolio_shared_data.json`,
       dataType: "json",
       cache: false,
       success: function (data) {
         this.setState({ sharedData: data });
-        document.title = `${this.state.sharedData.basic_info.name}`;
+        document.title = `${this.state.sharedData.basic_info.name} | ${this.state.sharedData.basic_info.title}`;
       }.bind(this),
       error: function (xhr, status, err) {
         alert(err);
@@ -53,28 +61,28 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header sharedData={this.state.sharedData.basic_info} />
-        
-        <About
-          resumeBasicInfo={this.state.resumeData.basic_info}
-          sharedBasicInfo={this.state.sharedData.basic_info}
-        />
-        <Projects
-          resumeProjects={this.state.resumeData.projects}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Skills
-          sharedSkills={this.state.sharedData.skills}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Experience
-          resumeExperience={this.state.resumeData.experience}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
-      </div>
-    );
-  }
+      <Header sharedData={this.state.sharedData.basic_info} />
+
+      <About
+        resumeBasicInfo={this.state.resumeData.basic_info}
+        sharedBasicInfo={this.state.sharedData.basic_info}
+      />
+      <Projects
+        resumeProjects={this.state.resumeData.projects}
+        resumeBasicInfo={this.state.resumeData.basic_info}
+      />
+      <Skills
+        sharedSkills={this.state.sharedData.skills}
+        resumeBasicInfo={this.state.resumeData.basic_info}
+      />
+      <Experience
+        resumeExperience={this.state.resumeData.experience}
+        resumeBasicInfo={this.state.resumeData.basic_info}
+      />
+      <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
+    </div>
+  );
+}
 }
 
 export default App;

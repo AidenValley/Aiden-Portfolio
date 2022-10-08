@@ -1,19 +1,16 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
+import nodejs from "@iconify/icons-logos/nodejs";
 import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
+import postgresql from "@iconify/icons-logos/postgresql";
 
 class About extends Component {
   render() {
-    if (this.props.sharedBasicInfo) {
-      var profilepic = "images/" + this.props.sharedBasicInfo.image;
-    }
-    if (this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.about;
-      var hello = this.props.resumeBasicInfo.description_header;
-      var about = this.props.resumeBasicInfo.description;
-    }
+      var profilepic = 'public\images\portfolio\myProfile.jpg';
+      const sectionName = ['About Me'];
+      const hello = ['Hi!'];
+      const about = ["I am an optimistic but also a persistent Software Engineer, when recently continuing my education through the General Assembly. I have multiple career background such as Customs Entry Writer within Supply Chain Industry and Digital Marketing experience as well.",
+    "Throughtout this journey, I was able to adapt and practice many of critical skills such as strong organization skills, meeting tight deadlines, ability to concise solutions for various challenges and problems."];
 
     return (
       <section id="about">
@@ -31,7 +28,7 @@ class About extends Component {
                     alt="Avatar placeholder"
                   />
                   <Icon
-                    icon={angularIcon}
+                    icon={nodejs}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
@@ -39,7 +36,7 @@ class About extends Component {
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={vueIcon}
+                    icon={postgresql}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                 </span>
@@ -77,10 +74,10 @@ class About extends Component {
                     }}
                   >
                     <br />
-                    <span className="wave">{hello}  About Me </span>
+                    <span className="wave">{hello}</span>
                     <br />
                     <br />
-                    {about}
+                    <span className="wave">{about}</span>
                   </div>
                 </div>
               </div>

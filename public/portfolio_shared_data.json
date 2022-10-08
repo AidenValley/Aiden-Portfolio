@@ -1,17 +1,17 @@
 {
     "basic_info": {
-      "name": "Davina Griss",
-      "titles": [ "Front-end Developer", "Senior Data Engineer", "Dev Team lead", "Mobile App Developer" ],
+      "name": "Aiden (Ha Yoon) Jang",
+      "titles": [ "Software Engineer", "Front-end Developer", "Full-Stack Developer" ],
       "social": [
         {
           "name": "github",
-          "url": "https://github.com",
+          "url": "https://github.com/AidenValley",
           "class": "fab fa-github"
         },
         {
-          "name": "instagram",
-          "url": "https://www.instagram.com",
-          "class": "fab fa-instagram"
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/aiden-ha-yoon-jang/",
+          "class": "fab fa-linkedin"
         }
       ],
       "image": "myProfile.jpg"

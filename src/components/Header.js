@@ -4,6 +4,7 @@ import Switch from "react-switch";
 
 class Header extends Component {
   titles = ['Software Engineer', ' ', 'Front-End Developer', ' ', 'Full-Stack Developer'];
+  names = ['Aiden (Ha Yoon) Jang'];
 
   constructor() {
     super();
@@ -20,13 +21,14 @@ class Header extends Component {
     var dataThemeAttribute = "data-theme";
     var body = document.body;
     var newTheme =
-      body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
+    body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
     body.setAttribute(dataThemeAttribute, newTheme);
   }
 
   render() {
     if (this.props.sharedData) {
-      var name = this.props.sharedData.name;
+      // var name = this.props.sharedData.name;
+      // var title = this.props.sharedData.title.toUpperCase();
       this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
     }
 
@@ -42,8 +44,7 @@ class Header extends Component {
               <span className="iconify header-icon" data-icon="fa6-solid:desktop" data-inline="false"></span>
               <br/>
               <h1 className="mb-0">
-                <Typical steps={[name]} wrapper="p" />
-                Aiden (Ha Yoon) Jang
+                <Typical steps={this.names} wrapper="p" />
               </h1>
               <div className="title-container">
                 <HeaderTitleTypeAnimation/>

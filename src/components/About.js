@@ -3,15 +3,16 @@ import { Icon } from "@iconify/react";
 import nodejs from "@iconify/icons-logos/nodejs";
 import reactIcon from "@iconify/icons-logos/react";
 import postgresql from "@iconify/icons-logos/postgresql";
+// import profilePic from '/Sequelize_Sequence.jpg';
+
 
 class About extends Component {
   render() {
-      var profilepic = 'public\images\portfolio\myProfile.jpg';
       const sectionName = ['About Me'];
       const hello = ['Hi!'];
       const about = ["I am an optimistic but also a persistent Software Engineer, when recently continuing my education through the General Assembly. I have multiple career background such as Customs Entry Writer within Supply Chain Industry and Digital Marketing experience as well.",
     "Throughtout this journey, I was able to adapt and practice many of critical skills such as strong organization skills, meeting tight deadlines, ability to concise solutions for various challenges and problems."];
-
+     
     return (
       <section id="about">
         <div className="col-md-12">
@@ -22,11 +23,7 @@ class About extends Component {
             <div className="col-md-4 mb-5 center">
               <div className="polaroid">
                 <span style={{ cursor: "auto" }}>
-                  <img
-                    height="250px"
-                    src={profilepic}
-                    alt="Avatar placeholder"
-                  />
+                  <img height="250px" src={ require('./../images/myProfile.jpg')} />
                   <Icon
                     icon={nodejs}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}

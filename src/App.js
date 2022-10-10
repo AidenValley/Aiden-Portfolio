@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
+
 class App extends Component {
 
   constructor(props) {
@@ -19,20 +20,10 @@ class App extends Component {
     };
   }
 
-  // applyPickedLanguage() {
-  //   var resumePath = `res_primaryLanguage.json`
-  //   this.loadResumeFromPath(resumePath);
-  // }
-
-  // componentDidMount() {
-  //   this.loadSharedData();
-  // }
-
-
-  loadResumeData(path) {
+  loadResumeFromPath(path) {
     $.ajax({
-      url: './res_primaryLanguage.json',
-      dataType: "json",
+      url: path,
+      dataType: "json", 
       cache: false,
       success: function (data) {
         this.setState({ resumeData: data });

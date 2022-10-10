@@ -21,6 +21,24 @@ class Projects extends Component {
     const projectTitle = ['Lord of the Strings', 'Simply SupplyChain'];
     const projectDate = ['2022'];
 
+    // const [projectInfo, setInfo] = useState([
+    //   {
+    //     title: "Simply SupplyChain", 
+    //     startDate: "2022", 
+    //     description: "Simply SupplyChain is a fullstack web application, designed to help the users to learn about one of the fundamentals of international business terminologies with additional features of implemnting the learnt terms into real news/aritcles",
+    //     images: ["./../images/supplyChainHome.png", "./../images/supplyChainTerms.png"],
+    //     url: "https://simply-supplychain.herokuapp.com/"
+    //   },
+    //   {
+    //     title: "Lord of the Strings", 
+    //     startDate: "2022", 
+    //     description: "One of my first fully built app based on HTML Canvas game. Lord of the Strings is a dynamic 2D tennis simulation game that allows the players/users to use the racket to move up or down to hit a moving ball. To win the game",
+    //     images: ["./../images/tennisMain.png", "./../images/tennisWins.png"],
+    //     url: "https://aidenvalley.github.io/Lord-of-the-Strings/"
+    //   }
+    //   ]);
+   
+
     return (
       <><div
         className="col-sm-12 col-md-6 col-lg-4"

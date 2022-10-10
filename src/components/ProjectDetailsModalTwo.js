@@ -1,26 +1,16 @@
 import React, { Component } from "react";
 import { Modal } from "react-bootstrap";
-import AwesomeSlider from "react-awesome-slider";
-import AwesomeSliderStyles from "../scss/light-slider.scss";
-import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
-import techData from './../res_primaryLanguage.json';
 import image from './../images/supplyChainHome.png';
 
-class ProjectDetailsModal extends Component {
+class ProjectDetailsModalTwo extends Component {
   render() {
-    const technologies = ["NodeJS", "Bootstrap", "PostgreSQL"];
-    const title = ["Simply SupplyChain" ]
-    const description = [ "Simply SupplyChain is a fullstack web application, designed to help the users to learn about one of the fundamentals of international business terminologies with additional features of implemnting the learnt terms into real news/aritcles"]
-    const url = ["https://simply-supplychain.herokuapp.com/"];
-
     const tennisTechnolgies =["HTML 5", "CSS 3", "JavaScript"];
     const tennisTitle = ["Lord of the Strings"];
-    const tennisDescription = ["Lord of the Strings is a dynamic 2D tennis simulation game that allows the players/users to use the racket to move up or down to hit a moving ball"]
+    const tennisDescription = ["Lord of the Strings is a dynamic 2D tennis simulation game that allows the players/users to use the racket to move up or down to hit a moving ball."]
     const tennisurl = ["https://aidenvalley.github.io/Lord-of-the-Strings/"];
 
     return (
-
       <Modal
         {...this.props}
         size="lg"
@@ -55,17 +45,17 @@ class ProjectDetailsModal extends Component {
               ></span>
             </div>
             <img
-                src= { require('./../images/supplyChainTerms.png')}
+                src= { require('./../images/tennisWins.png')}
                 alt="projectImages"
-                height="301"
+                height="377"
                 style={{ marginBottom: 0, paddingBottom: 0, position: 'relative' }} />
           </div>
           <div className="col-md-10 mx-auto">
             <h3 style={{ padding: "5px 5px 0 5px" }}>
-              {title}
-              {url ? (
+              {tennisTitle}
+              {tennisurl ? (
                 <a
-                  href={url}
+                  href={tennisurl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="link-href"
@@ -77,9 +67,9 @@ class ProjectDetailsModal extends Component {
                 </a>
               ) : null}
             </h3>
-            <p className="modal-description">{description}</p>
+            <p className="modal-description">{tennisDescription}</p>
             <div className="col-md-12 text-center">
-              <ul className="list-inline mx-auto">{this.technologies}</ul>
+              <ul className="list-inline mx-auto">{this.tennisTechnolgies}</ul>
             </div>
           </div>
         </div>
@@ -89,23 +79,23 @@ class ProjectDetailsModal extends Component {
             <div className="container">
               <div className="row text-center">
                 <div className="col">
-                  <i className="devicon-nodejs-plain" style={{ position:"relative", fontSize: "300%" }}>
+                  <i className="devicon-html5-plain" style={{ position:"relative", fontSize: "300%" }}>
                     <p className="text-center" style={{ fontSize: "30%" }}>
-                      {technologies[0]}
+                      {tennisTechnolgies[0]}
                     </p>
                   </i>
                 </div>
                 <div className="col">
-                  <i className="devicon-bootstrap-plain" style={{ fontSize: "300%" }}>
+                  <i className="devicon-css3-plain" style={{ fontSize: "300%" }}>
                     <p className="text-center" style={{ fontSize: "30%" }}>
-                      {technologies[1]}
+                      {tennisTechnolgies[1]}
                     </p>
                   </i>
                 </div>
                 <div className="col">
-                  <i className="devicon-postgresql-plain" style={{ fontSize: "300%" }}>
+                  <i className="devicon-javascript-plain" style={{ fontSize: "300%" }}>
                     <p className="text-center" style={{ fontSize: "30%" }}>
-                      {technologies[2]}
+                      {tennisTechnolgies[2]}
                     </p>
                   </i>
                 </div>
@@ -120,4 +110,4 @@ class ProjectDetailsModal extends Component {
   }
 }
 
-export default ProjectDetailsModal;
+export default ProjectDetailsModalTwo;

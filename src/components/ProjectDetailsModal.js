@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import { Modal } from "react-bootstrap";
-import AwesomeSlider from "react-awesome-slider";
-import AwesomeSliderStyles from "../scss/light-slider.scss";
-import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
-import techData from './../res_primaryLanguage.json';
-import image from './../images/supplyChainHome.png';
+
 
 class ProjectDetailsModal extends Component {
   render() {
@@ -13,12 +9,7 @@ class ProjectDetailsModal extends Component {
     const title = ["Simply SupplyChain" ]
     const description = [ "Simply SupplyChain is a fullstack web application, designed to help the users to learn about one of the fundamentals of international business terminologies with additional features of implemnting the learnt terms into real news/aritcles"]
     const url = ["https://simply-supplychain.herokuapp.com/"];
-
-    const tennisTechnolgies =["HTML 5", "CSS 3", "JavaScript"];
-    const tennisTitle = ["Lord of the Strings"];
-    const tennisDescription = ["Lord of the Strings is a dynamic 2D tennis simulation game that allows the players/users to use the racket to move up or down to hit a moving ball"]
-    const tennisurl = ["https://aidenvalley.github.io/Lord-of-the-Strings/"];
-
+    
     return (
 
       <Modal

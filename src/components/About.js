@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 import nodejs from "@iconify/icons-logos/nodejs";
 import reactIcon from "@iconify/icons-logos/react";
 import postgresql from "@iconify/icons-logos/postgresql";
-// import profilePic from '/Sequelize_Sequence.jpg';
+
 
 
 class About extends Component {

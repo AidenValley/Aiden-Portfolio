@@ -22,6 +22,7 @@ class Projects extends Component {
     };
 
     let detailsModalClose = () => this.setState({ detailsModalShow: false });
+    let detailsModalCloseTwo = () => this.setState({ detailsModalShowTwo: false });
 
     const sectionName = 'Main Projects';
     const projectTitle = ['Lord of the Strings', 'Simply SupplyChain'];
@@ -84,7 +85,7 @@ class Projects extends Component {
 
             <ProjectDetailsModalTwo
               show={this.state.detailsModalShowTwo}
-              onHide={detailsModalClose}
+              onHide={detailsModalCloseTwo}
               data={this.state.deps} />
           </div>
         </section></>

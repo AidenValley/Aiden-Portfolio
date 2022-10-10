@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Modal } from "react-bootstrap";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
-import image from './../images/supplyChainHome.png';
 
 class ProjectDetailsModalTwo extends Component {
   render() {

@@ -7,9 +7,10 @@ class ProjectDetailsModal extends Component {
   render() {
     const technologies = ["NodeJS", "Bootstrap", "PostgreSQL"];
     const title = ["Simply SupplyChain" ]
-    const description = [ "Simply SupplyChain is a fullstack web application, designed to help the users to learn about one of the fundamentals of international business terminologies with additional features of implemnting the learnt terms into real news/aritcles"]
+    const description = [ "Simply SupplyChain is a fullstack web application, designed to help the users to learn about fundamental business contract terminologies of international sales.", 
+    "The users are able to navigate into the real news/articles and add comments to their selected favorite news."]
     const url = ["https://simply-supplychain.herokuapp.com/"];
-    
+
     return (
 
       <Modal
@@ -46,9 +47,10 @@ class ProjectDetailsModal extends Component {
               ></span>
             </div>
             <img
+                className="img-thumbnail"
                 src= { require('./../images/supplyChainTerms.png')}
                 alt="projectImages"
-                height="301"
+                height="303"
                 style={{ marginBottom: 0, paddingBottom: 0, position: 'relative' }} />
           </div>
           <div className="col-md-10 mx-auto">

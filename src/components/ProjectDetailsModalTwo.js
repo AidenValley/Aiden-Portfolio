@@ -6,7 +6,8 @@ class ProjectDetailsModalTwo extends Component {
   render() {
     const tennisTechnolgies =["HTML 5", "CSS 3", "JavaScript"];
     const tennisTitle = ["Lord of the Strings"];
-    const tennisDescription = ["Lord of the Strings is a dynamic 2D tennis simulation game that allows the players/users to use the racket to move up or down to hit a moving ball."]
+    const tennisDescription = ["Lord of the Strings is a dynamic 2D tennis simulation game that allows the players/users to use the racket to move up or down to hit a moving ball.",
+  "Key controls are [w, s] for the left racket and [up arrow, down arrow] for the right racket."]
     const tennisurl = ["https://aidenvalley.github.io/Lord-of-the-Strings/"];
 
     return (
@@ -44,6 +45,7 @@ class ProjectDetailsModalTwo extends Component {
               ></span>
             </div>
             <img
+                className="img-thumbnail"
                 src= { require('./../images/tennisWins.png')}
                 alt="projectImages"
                 height="377"

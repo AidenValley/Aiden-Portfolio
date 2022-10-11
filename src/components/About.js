@@ -10,8 +10,8 @@ class About extends Component {
   render() {
       const sectionName = ['About Me'];
       const hello = ['Hi!'];
-      const about = ["I am an optimistic but also a persistent Software Engineer, when recently continuing my education through the General Assembly. I have multiple career background such as Customs Entry Writer within Supply Chain Industry and Digital Marketing experience as well.",
-    "Throughtout this journey, I was able to adapt and practice many of critical skills such as strong organization skills, meeting tight deadlines, ability to concise solutions for various challenges and problems."];
+      const about = ["I am an optimistic but also a persistent Software Engineer, when recently continuing my education through the General Assembly. I have multiple career backgrounds such as Customs Entry Writer within Supply Chain Industry and Digital Marketer in Marketing industry as well.",
+    "Throughout my career journey, I am accustomed to meet the tight deadlines within the reinforced organizational culture, bringing absolute concise solutions for various challenges and problems." ];
      
     return (
       <section id="about">
@@ -74,7 +74,7 @@ class About extends Component {
                     <span className="wave">{hello}</span>
                     <br />
                     <br />
-                    <span className="wave">{about}</span>
+                    <span className="text-muted">{about}</span>
                   </div>
                 </div>
               </div>

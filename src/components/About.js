@@ -9,9 +9,10 @@ import postgresql from "@iconify/icons-logos/postgresql";
 class About extends Component {
   render() {
       const sectionName = ['About Me'];
-      const hello = ['Hi!'];
-      const about = ["I am an optimistic but also a persistent Software Engineer, when recently continuing my education through the General Assembly. I have multiple career backgrounds such as Customs Entry Writer within Supply Chain Industry and Digital Marketer in Marketing industry as well.",
-    "Throughout my career journey, I am accustomed to meet the tight deadlines within the reinforced organizational culture, bringing absolute concise solutions for various challenges and problems." ];
+      const hello = ['Hello to Everyone!'];
+      const about = ["I develop abstract ideas and turn them into cohesive designs, delivering the best scalable, stable, and high-quality platform.", 
+      "I am a former Customs Entry Writer and Digital Marketer that chose to pursue my passion. General Assembly provided me with a full spectrum of skills and coaching that will allow me to effectively develop a world-class user experience.",
+      "If you are seeking a top-rated front-end developer, please Git to know me." ];
      
     return (
       <section id="about">
@@ -71,10 +72,10 @@ class About extends Component {
                     }}
                   >
                     <br />
-                    <span className="wave">{hello}</span>
+                    <span className="wave h5-responsive">{hello}</span>
                     <br />
                     <br />
-                    <span className="text-muted">{about}</span>
+                    <span className="h4 ">{about}</span>
                   </div>
                 </div>
               </div>

@@ -12,7 +12,7 @@ class About extends Component {
       const hello = ['Hello to Everyone!'];
       const about = ["I develop abstract ideas and turn them into cohesive designs, delivering the best scalable, stable, and high-quality platform.", 
       "I am a former Customs Entry Writer and Digital Marketer that chose to pursue my passion. General Assembly provided me with a full spectrum of skills and coaching that will allow me to effectively develop a world-class user experience.",
-      "If you are seeking a top-rated front-end developer, please Git to know me." ];
+      "If you are seeking a top-rated web developer, please Git to know me." ];
      
     return (
       <section id="about">

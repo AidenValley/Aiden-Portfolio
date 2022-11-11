@@ -3,11 +3,11 @@ import React, { Component } from "react";
 class Skills extends Component {
   render() {
       const sectionName = ['Skills'];
-      const skillsName = ['HTML 5', 'CSS 3', 'JavaScript', 'ReactJS', 'NodeJS', "Bootstrap", "TailwindCSS", "PostgreSQL", "MySQL"];
+      const skillsName = ['HTML 5', 'CSS 3', 'JavaScript', 'ReactJS', 'NodeJS', "Bootstrap", "MongoDB", "PostgreSQL", "MySQL"];
 
     return (
       <>
-      <section id="skills" className="">
+      <section id="skills">
           <div className="container">
 
             <div className="col-md-12">
@@ -59,7 +59,7 @@ class Skills extends Component {
             <div className="container">
               <div className="row text-center">
                 <div className="col">
-                  <i className="devicon-tailwindcss-plain" style={{ color:"white",fontSize: "500%" }} >
+                  <i className="devicon-mongodb-plain" style={{ color:"white",fontSize: "500%" }} >
                   </i>
                   <ul className="list-inline mx-auto skill-icon">{skillsName[6]}</ul>
                 </div>

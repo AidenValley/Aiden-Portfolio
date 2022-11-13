@@ -21,7 +21,7 @@ class About extends Component {
           <h1 style={{ color: "black" }}>
             <span>{sectionName}</span>
             <span>
-              <a href="https://drive.google.com/file/d/1X1jAoTQt7wz8VjAfg66IWKhihaRvKMAw/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1CqZxEAg0nMeBEEsdmSTt5DlI_nPqUnf9/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <Icon
                   icon={documentPdf}
                   width="30"

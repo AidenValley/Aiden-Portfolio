@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Skills extends Component {
   render() {
       const sectionName = ['Skills'];
-      const skillsName = ['HTML 5', 'CSS 3', 'JavaScript', 'ReactJS', 'NodeJS', "Bootstrap", "MongoDB", "PostgreSQL", "MySQL"];
+      const skillsName = ['HTML 5', 'CSS 3', 'JavaScript', 'ReactJS', 'NodeJS', "Bootstrap", "MongoDB", "PostgreSQL", "MySQL", "Python", "Flask", "Django"];
 
     return (
       <>
@@ -35,7 +35,7 @@ class Skills extends Component {
                 </div>
               </div>
             </div>
-
+            <br/>
             <div className="container">
               <div className="row text-center">
                 <div className="col">
@@ -55,6 +55,7 @@ class Skills extends Component {
                 </div>
               </div>
             </div>
+            <br/>
 
             <div className="container">
               <div className="row text-center">
@@ -72,6 +73,27 @@ class Skills extends Component {
                   <i className="devicon-mysql-plain" style={{ color:"white",fontSize: "500%" }} >
                   </i>
                   <ul className="list-inline mx-auto skill-icon">{skillsName[8]}</ul>
+                </div>
+              </div>
+            </div>
+
+            <br/>
+            <div className="container">
+              <div className="row text-center">
+                <div className="col">
+                  <i className="devicon-python-plain" style={{ color:"white",fontSize: "500%" }} >
+                  </i>
+                  <ul className="list-inline mx-auto skill-icon">{skillsName[9]}</ul>
+                </div>
+                <div className="col">
+                  <i className="devicon-flask-plain" style={{ color:"white",fontSize: "500%" }} >
+                  </i>
+                  <ul className="list-inline mx-auto skill-icon">{skillsName[10]}</ul>
+                </div>
+                <div className="col">
+                  <i className="devicon-django-plain" style={{ color:"white",fontSize: "500%" }} >
+                  </i>
+                  <ul className="list-inline mx-auto skill-icon">{skillsName[11]}</ul>
                 </div>
               </div>
             </div>

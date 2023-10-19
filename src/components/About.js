@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
-import nodejs from "@iconify/icons-logos/nodejs";
-import reactIcon from "@iconify/icons-logos/react";
+import bamboo from "@iconify/icons-logos/bamboo";
+import aws from "@iconify/icons-logos/aws";
 import postgresql from "@iconify/icons-logos/postgresql";
 import documentPdf from "@iconify/icons-carbon/document-pdf";
 
@@ -21,14 +21,14 @@ class About extends Component {
           <h1 style={{ color: "black" }}>
             <span>{sectionName}</span>
             <span>
-              <a href="https://drive.google.com/file/d/1CqZxEAg0nMeBEEsdmSTt5DlI_nPqUnf9/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              {/* <a href="https://drive.google.com/file/d/1CqZxEAg0nMeBEEsdmSTt5DlI_nPqUnf9/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <Icon
                   icon={documentPdf}
                   width="30"
                   height="30"
                   className="ml-4 cursor:wait"
                   />
-              </a>
+              </a> */}
             </span>
           </h1>
           <div className="row center mx-auto mb-5">
@@ -40,12 +40,12 @@ class About extends Component {
                     src={require("./../images/myProfile.jpg")}
                   />
                   <Icon
-                    icon={nodejs}
+                    icon={bamboo}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={reactIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                    icon={aws}
+                    style={{ fontSize: "300%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
                     icon={postgresql}

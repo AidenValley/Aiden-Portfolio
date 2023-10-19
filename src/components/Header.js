@@ -3,7 +3,7 @@ import Typical from "react-typical";
 import Switch from "react-switch";
 
 class Header extends Component {
-  titles = ['Full-Stack Developer', ' ', 'Front-End Developer', ' ', 'Software Engineer'];
+  titles = ['DevOps Engineer'];
   names = ['Aiden (Ha Yoon) Jang'];
 
   constructor() {
@@ -33,7 +33,7 @@ class Header extends Component {
     }
 
     const HeaderTitleTypeAnimation = React.memo( () => {
-      return <Typical className="title-styles" steps={this.titles} loop={3} wrapper="p"/>
+      return <Typical className="title-styles" steps={this.titles} loop={1} wrapper="p"/>
     }, (props, prevProp) => true);
 
     return (

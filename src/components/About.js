@@ -10,9 +10,9 @@ class About extends Component {
     const sectionName = ["About Me"];
     const hello = ["Hello to Everyone!"];
     const about = [
-      "I develop abstract ideas and turn them into cohesive designs, delivering the best scalable, stable, and high-quality platform.",
-      "I am a former Customs Entry Writer and Digital Marketer that chose to pursue my passion. General Assembly provided me with a full spectrum of skills and coaching that will allow me to effectively develop a world-class user experience.",
-      "If you are seeking a top-rated web developer, please Git to know me.",
+      "Hello! I'm a DevOps Engineer with a passion for AWS cloud technology and a background in development.",
+      "I specialize in crafting seamless IT solutions that bridge the gap between coding and operations. My expertise lies in architecting scalable AWS infrastructures and streamlining workflows.",
+      "I'm all about finding creative solutions to complex problems, and I thrive in collaborative environments. Let's innovate together and make amazing things happen in the cloud! please Git to know me.",
     ];
 
     return (

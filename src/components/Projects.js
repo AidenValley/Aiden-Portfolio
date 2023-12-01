@@ -33,7 +33,7 @@ class Projects extends Component {
     let detailsModalCloseThree = () =>
       this.setState({ detailsModalShowThree: false });
 
-    const sectionName = "Main Projects";
+    const sectionName = "Notable Web Development Projects";
     const projectTitle = [
       "Lord of the Strings",
       "Simply SupplyChain",
